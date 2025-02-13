@@ -1,0 +1,104 @@
+header {
+    background-color: #220443;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    background-color: #7a1865;
+}
+
+.navbar li {
+    position: relative;
+    margin: 0 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    display: block;
+}
+
+.navbar a:hover {
+    background-color: #c97bbf;
+    border-radius: 5px;
+    outline: 2px solid #260747;
+}
+
+/* Dropdown Menu */
+.dropdown-content {
+    border-radius: 8px;
+    display: none;
+    outline: 2px solid #260747;
+    position: absolute;
+    background-color: #7a1865;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 10px;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #c97bbf;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    margin-top: 1px;
+}
+
+.pfp {
+    border-radius: 60%;
+}
+
+.title {
+    text-align: center;
+}
+
+/* General Styling */
+body {
+    background-image: url('./images/portfolioBackground.jpg');
+    /* Change the file path */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    padding: 20px;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: #fff;
+}
+
+.project {
+    margin-bottom: 20px;
+    border: 4px solid #7a1865;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 5px;
+    background-color: #4e3386;
+    color: #fff;
+    margin-top: 20px;
+}

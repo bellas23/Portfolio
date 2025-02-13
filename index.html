@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bella Singh - Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="#about">Bio</a></li>
+                <li><a href="https://www.linkedin.com/in/isabelle-singh" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/bellas23" target="_blank">GitHub</a></li>
+                <li class="dropdown">
+                    <a href="#projects" class="dropbtn">Projects</a>
+                    <div class="dropdown-content">
+                        <a href="#android">Android App Project</a>
+                        <a href="#snake">Snake Identification Website</a>
+                        <a href="#embedded">Embedded Systems Project</a>
+                    </div>
+                </li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <div class="title">
+                <img src="./images/profile.jpeg" width="200" alt="Profile Photo" class="pfp">
+                <h1>Bella Singh</h1>
+                <h3>
+                    <p class="title">Software Engineer & Web Developer</p>
+                </h3>
+            </div>
+            <div class="project">
+                I am a junior Software Engineering student at Iowa State University, with a minor in General
+                Business. I posess a strong foundation in software development, embedded systems, and IT
+                infrastructure, with experience spanning full-stack web development, Android application
+                development, and systems administration. My technical expertise includes Java, Embedded C, MySQL, Neo4j,
+                JavaScript, React, Spring Boot, Docker, and CI/CD pipelines.
+
+                <p>I have worked on several notable projects, including Sketchy Business, a real-time multiplayer
+                    drawing game built with WebSockets and Spring Boot, and Serpent Spotter, an interactive snake
+                    identification website leveraging JavaScript, MongoDB, and React. I have also designed embedded
+                    systems, such as an autonomous Mars Rover Robot, integrating C and Python to enable wireless terrain
+                    mapping.</p>
+
+                <p>In addition to software engineering, I have several years of hands-on experience in IT support and
+                    device management. As a PC Technician II at Lone Star College and a Student Support Technician at
+                    Iowa State University, I have managed device imaging and deployment using MECM, resolved
+                    hardware/software issues, and administered enterprise systems.</p>
+
+                Beyond academics and work, I am actively involved in the ISU Solar Car Club, Swim Club (Team Captain),
+                and Archery Club. I also love bouldering (rock climbing), weightlifting, and basketball, combining my
+                technical skills with my passion for teamwork and problem-solving. I am currently seeking internship
+                opportunities in software engineering, where I can apply my
+                technological expertise and leadership skills to real-world challenges.
+            </div>
+    </section>
+
+    <section class="container">
+        <h2><u>Projects</u></h2>
+        <div class="project" id="android">
+            <h3>Sketchy Business🎨🖌️</h3>
+            <i>Multiplayer Drawing & Guessing Game</i>
+            <p>Sketchy Business is a real-time multiplayer drawing game where players take turns as drawers and guessers
+                in
+                a fast-paced, competitive environment. Guessers earn points for correct answers, while drawers are
+                rewarded
+                based on how many players successfully guess their sketches. The game features user sign-up/login,
+                customizable usernames, and unlockable profile pictures tied to experience (EXP) earned through
+                victories.
+                To ensure a safe and enjoyable experience, we implemented a reporting system, allowing admins to review
+                and
+                address inappropriate drawings.</p>
+
+            <h3><strong><u>Technical Highlights:</u></strong></h3>
+            <b>Frontend:</b> Android Studio, Java – Designed UI elements, background images, app art, and page layouts.
+            <br><br>
+            <b>Backend:</b> IntelliJ, Spring Boot – Implemented CI/CD pipelines for automated backend deployment.
+            <br><br>
+            <b>Real-Time Features:</b> WebSockets for live drawing and chat functionality.
+            <br><br>
+            <strong>🏆 Achievements:</strong>
+            My team and I were recognized as exceptional coders and managers, securing 2nd place in our section for
+            Sketchy Business. Our professor commended our technical execution, teamwork, and project management skills,
+            making this project one of our proudest accomplishments!</p>
+        </div>
+        <div class="project" id="snake">
+            <h3>SerpentSpotter🐍🔍</h3>
+            <i>Snake Identification Website</i>
+            <p>SerpentSpotter is an educational website designed to help residents of Iowa identify local snake species
+                and understand their ecological importance. Whether you’re a curious hiker, a homeowner encountering a
+                backyard visitor, or a wildlife enthusiast, SerpentSpotter provides the tools to confidently recognize
+                and learn about the snakes in your area. The website features a comprehensive glossary with detailed
+                descriptions, high-quality images, and key
+                characteristics of each species—including appearance, habitat, behavior, and their role in the
+                ecosystem. To make identification even easier, SerpentSpotter includes an interactive search function
+                that filters snake species based on user-inputted characteristics, helping users match their encounters
+                with the right species effortlessly.</p>
+
+            <h3><strong><u>Technical Highlights:</u></strong></h3>
+            <strong>Frontend: </strong>React, HTML, CSS – Designed an intuitive UI with clear, informative
+            visuals.<br><br>
+            <strong>Backend: </strong>MongoDB, JavaScript – Developed a structured database for storing and retrieving
+            snake species
+            data.<br><br>
+            <strong>Search & Identification: </strong>Implemented a dynamic filtering system that allows users to input
+            traits and
+            receive matching results in real time.
+            <br><br>
+            <strong>🌟 Why It Matters:</strong>
+            Snakes play a crucial role in Iowa’s ecosystems, controlling pest populations and maintaining balance in the
+            food chain. By educating the public and promoting awareness, SerpentSpotter helps reduce fear and
+            misinformation surrounding these often-misunderstood reptiles.
+        </div>
+        <div class="project" id="embedded">
+            <h3>Mars Rover Application🤖📡</h3>
+            <p><i>Autonomous Navigation System</i></p>
+            This project is an embedded C application that transforms a Roomba into a Mars Rover, navigating
+            its environment while avoiding obstacles in real-time. Using a combination of IR sensors, sonar (Ping)
+            sensors, and bumper sensors, the robot triggers pre-programmed functions that analyze the sensor data and
+            adjusts the robot's path. This enables it to navigate through an obstical-ridden path without human
+            intervention.
+
+            <p>Additionally, I modified a Python GUI that takes the robot's sensor data and uses it to map the terrain
+                surrounding the robot. This allows the robot to be observed without physically looking at it, similar to
+                the mars rover.</p>
+            <h3><strong><u>Technical Highlights:</u></strong></h3>
+            <strong>Languages: </strong>Embedded C, Python<br><br>
+            <strong>Embedded Systems: </strong>Implemented data collection from IR, sonar, and bumper sensors to detect
+            and avoid obstacles.<br><br>
+            <strong>GUI & Visualization: </strong>Designed a Python-based interface for live terrain mapping and
+            navigation feedback.<br><br>
+
+            <strong>🏆 Achievements:</strong>
+            This project showcases my expertise in embedded systems, real-time processing, and human-computer
+            interaction. Although it was one of my most challenging projects, I found that what I could accomplish by
+            combining hardware with my programming knowledge was fascinating, as it led me to create a fully autonomous
+            and interactive system.
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <li><strong>Email: </strong><a href="mailto:bellas23@iastate.edu">bellas23@iastate.edu</a></li>
+            <li><strong>Instagram: </strong><a href="https://www.instagram.com/_bella__singh/">@_bella__singh</a>
+            </li>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Bella Singh</p>
+    </footer>
+</body>
+
+</html>
